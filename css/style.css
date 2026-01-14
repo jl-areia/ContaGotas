@@ -1,1 +1,90 @@
-/* folha de estilos do Site */
+/* Folhas de Estilos do Site */
+
+/* Estilos de posicionamento geral. */
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*
+    Define a unidade de medida 'rem' que equivale ao espaço 
+    ocupado pela letra 'M' na tela.
+    1rem = 16px, 0.5rem = 8px 
+    */
+    position: relative;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: steelblue;
+}
+
+#wrap {
+    position: relative;    
+    height: 100%;
+    width: 100%;
+    max-width: 1080px;
+    /* min-width: 300px; */
+    margin: auto;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+header div {
+    text-align: center;
+}
+
+header img {
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem;
+}
+
+header h1 {
+    margin: 0;
+font-size: 2rem;
+}
+
+header small {
+    letter-spacing: .16rem;
+}
+
+/* Menu principal */
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    border-radius: .5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: .2s;
+}
+
+nav a:first-child {
+    margin-right: auto;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
