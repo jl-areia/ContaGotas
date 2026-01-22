@@ -27,12 +27,14 @@ body {
 }
 
 #wrap {
-    position: relative;    
+    position: relative;
     height: 100%;
     width: 100%;
     max-width: 1080px;
     /* min-width: 300px; */
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Cabeçalho */
@@ -41,7 +43,7 @@ header {
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    margin: .5rem;
+    margin: .5rem .5rem 0 .5rem;
     border-radius: .5rem;
 }
 
@@ -57,7 +59,7 @@ header img {
 
 header h1 {
     margin: 0;
-font-size: 2rem;
+    font-size: 2rem;
 }
 
 header small {
@@ -71,6 +73,7 @@ nav {
     display: flex;
     justify-content: end;
     border-radius: .5rem;
+    margin: .5rem;
 }
 
 nav a {
@@ -82,9 +85,55 @@ nav a {
 
 nav a:first-child {
     margin-right: auto;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+nav a:last-child {
+    border-radius: 0 .5rem .5rem 0;
 }
 
 nav a:hover {
     background-color: white;
     color: black;
+}
+
+/* Conteúdo principal */
+
+main {
+    background-color: white;
+    padding: 1rem;
+    margin: 0 .5rem .5rem .5rem;
+    border-radius: .5rem;
+    flex-grow: 1;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: black;
+    margin: 0 .5rem .5rem .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: orangered;
+}
+
+footer i {
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+
+footer>div {
+    text-align: center;
+    margin: .5rem;
 }
