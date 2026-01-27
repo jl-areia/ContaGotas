@@ -30,6 +30,10 @@ body {
 
 body {
     background-color: steelblue;
+    background-attachment: fixed;
+    background-image: url('/img/bg01.png');
+    background-position: center;
+    background-repeat: repeat;
 }
 
 /* Links em geral */

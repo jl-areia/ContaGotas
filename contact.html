@@ -110,9 +110,12 @@
             align-items: center;
         }
 
-        .contact-side img {
+        .contacts-qrcode {
             display: block;
-            margin: 2rem auto 1rem auto;
+            margin: 2rem auto 0 auto;
+            width: 100%;
+            max-width: auto;
+            height: auto;
         }
 
         .divider {
@@ -124,8 +127,23 @@
         /* Quando a largura da tela for de 768px ou mais */
         @media screen and (min-width: 768px) {
 
+            .contacts {
+                display: flex;
+            }
 
-            
+            .contact-form {
+                flex-grow: 1;
+                margin-right: 1rem;
+            }
+
+            .contact-side {
+                max-width: 250px;
+                min-width: 250px;
+                margin-top: 0;
+                border: none;
+                border-left: 3px dotted grey;
+            }
+
         }
     </style>
 </head>
@@ -193,29 +211,53 @@
                     <h3>Mais Contatos</h3>
                     Se prefrir use outro método de contato:
                     <ul>
-                        <li><a href="https://ws.me" target="_blank"><i
-                                    class="fa-brands fa-square-whatsapp fa-fw fa-2x"></i> <span>WhatsApp</span></a></li>
-                        <li><a href="tel:219988776665" target="_blank"><i class="fa-solid fa-phone fa-fw fa-2x"></i>
-                                <span>(21) 9988-77666</span></a></li>
-                        <li><a href="mailto:contagotas@gmail.com" target="_blank"><i
-                                    class="fa-solid fa-envelope fa-fw fa-2x"></i> <span>contagotas@gmail.com</span></a>
+                        <li>
+                            <a href="https://ws.me" target="_blank">
+                                <i class="fa-brands fa-square-whatsapp fa-fw fa-2x"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:219988776665" target="_blank">
+                                <i class="fa-solid fa-phone fa-fw fa-2x"></i>
+                                <span>(21) 9988-77666</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contagotas@gmail.com" target="_blank">
+                                <i class="fa-solid fa-envelope fa-fw fa-2x"></i>
+                                <span>E-mail</span>
+                            </a>
                         </li>
                     </ul>
 
                     <h3>Redes Sociais</h3>
                     Ou então conheça nossas redes sociais:
                     <ul>
-                        <li><a href="https://facebook.com" target="_blank"><i
-                                    class="fa-brands fa-square-facebook fa-fw fa-2x"></i> <span>Facebook</span></a></li>
-                        <li><a href="https://instagam.com" target="_blank"><i
-                                    class="fa-brands fa-square-instagram fa-fw fa-2x"></i> <span>Instagram</span></a>
+                        <li>
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fa-brands fa-square-facebook fa-fw fa-2x"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagam.com" target="_blank">
+                                <i class="fa-brands fa-square-instagram fa-fw fa-2x"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com" target="_blank">
+                                <i class="fa-brands fa-square-youtube fa-fw fa-2x"></i>
+                                <span>Youtube</span>
+                            </a>
                         </li>
                     </ul>
 
                     <h3>QRCode</h3>
                     Aponte sua câmera para o qrcode abaixo:
-                    <img src="img/frame.png" alt="QRCode">
-                    
+                    <img src="img/frame.png" alt="QRCode" class="contacts-qrcode">
+
                     <div class="divider"></div>
 
                 </aside>
